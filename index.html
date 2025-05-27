@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masala Haven - Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Masala Haven</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Banner -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Masala Haven</h1>
+            <p>Experience the soul of India, one bite at a time.</p>
+            <a href="#menu" class="cta-button">Discover Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        
+        <!-- Starters -->
+        <h3>Starters</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://static.toiimg.com/thumb/61050397.cms?width=1200&height=900" alt="Samosa">
+                <h4>Samosa<span class="recommended">Chef's Pick</span></h4>
+                <p>Crispy pastry filled with spiced potatoes and peas, served with tamarind chutney.</p>
+                <p class="price">60.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/vegetable-pakora-recipe.jpg" alt="Pakora">
+                <h4>Vegetable Pakora</h4>
+                <p>Fritters of mixed vegetables in a spiced chickpea batter, with mint chutney.</p>
+                <p class="price">$5.50</p>
+            </div>
+        </div>
+
+        <!-- Main Course -->
+        <h3>Main Course</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://www.shemins.com/wp-content/uploads/2017/05/Shemins-Butter-Chicken-LR.jpg" alt="Butter Chicken">
+                <h4>Butter Chicken<span class="recommended">Chef's Pick</span></h4>
+                <p>Tender chicken cooked in a creamy tomato sauce, served with naan or rice.</p>
+                <p class="price">$18.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.cookwithmanali.com/wp-content/uploads/2014/04/Paneer-Tikka-Masala.jpg" alt="Paneer Tikka Masala">
+                <h4>Paneer Tikka Masala</h4>
+                <p>Grilled paneer in a rich, spiced tomato gravy, served with naan or rice.</p>
+                <p class="price">$16.00</p>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <h3>Desserts</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://rakskitchen.net/wp-content/uploads/2021/09/gulab-jamun.jpg" alt="Gulab Jamun">
+                <h4>Gulab Jamun</h4>
+                <p>Soft milk dumplings soaked in rose-scented sugar syrup.</p>
+                <p class="price">$5.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://eatsbyramya.com/wp-content/uploads/2024/10/rasmalai_can_recipe.jpg" alt="Rasmalai">
+                <h4>Rasmalai<span class="recommended">Chef's Pick</span></h4>
+                <p>Spongy paneer dumplings in a creamy, cardamom-infused milk syrup.</p>
+                <p class="price">$6.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Since 2010, Masala Haven has brought the vibrant flavors of India to Foodville. Our family-run restaurant celebrates authentic recipes with fresh, locally sourced ingredients. Join us for a culinary journey that captures the essence of Indian hospitality.</p>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <h2>Visit Us</h2>
+        <p style="color: white;">123 Spice Lane, Foodville, CA 90210</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086534693517!2d-122.41941568468122!3d37.77492977975896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjciTiAxMjLCsDI1JzA5LjkiVw!5e0!3m2!1sen!2sus!4v1635789271987!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <script>
+        // Sticky Navbar
+        window.onscroll = function() {
+            const navbar = document.getElementById("navbar");
+            const sticky = navbar.offsetTop;
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        };
+    </script>
+</body>
+</html>
